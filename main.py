@@ -130,7 +130,7 @@ def run_command(cmd: str) -> None:
 
     if "weather" in cmd_low:
         api_key = WEATHER_API_KEY
-        city = "Lahore"       # Enter your city for which you want news about
+        city = "Lahore"       # Enter your city for which you want updates about
         url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
         try:
             res = requests.get(url, timeout=6).json()
